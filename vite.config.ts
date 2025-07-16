@@ -1,4 +1,4 @@
-/* import path from 'path';
+import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig(({ mode }) => {
@@ -14,17 +14,4 @@ export default defineConfig(({ mode }) => {
         }
       }
     };
-}); */
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  build: {
-    // This makes sure the output folder is named 'dist'
-    outDir: 'dist',
-    // This helps with asset paths
-    assetsDir: 'assets',
-  }
-})
+});
